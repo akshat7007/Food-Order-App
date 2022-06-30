@@ -8,7 +8,6 @@ const Header = (props) => {
   return (
     <>
       <header className={classes.header}>
-      <h1> App Updated</h1>
 
         <h1>Reat Meals</h1>
         {/* <img src={<CartIcon />} alt="" /> */}
