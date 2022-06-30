@@ -9,7 +9,7 @@ const Header = (props) => {
     <>
       <header className={classes.header}>
 
-        <h1>Best React Meals </h1>
+        <h2> React Meals </h2>
         {/* <img src={<CartIcon />} alt="" /> */}
         <HeaderCartButton onClick={props.onShowCart} />
       </header>
