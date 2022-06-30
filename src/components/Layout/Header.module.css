@@ -24,7 +24,7 @@
 
 .main-image img {
   width: 110%;
-  filter: blur(3px);
+  filter: blur(1px);
   height: 50%;
   object-fit: cover;
 position: fixed;
