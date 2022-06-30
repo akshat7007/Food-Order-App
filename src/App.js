@@ -21,6 +21,7 @@ function App() {
       <main>
         <Meals />
       </main>
+      <h1> App Updated</h1>
     </CartProvider>
   );
 }
