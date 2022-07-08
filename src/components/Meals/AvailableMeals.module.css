@@ -1,29 +1,97 @@
 .meals {
-    max-width: 60rem;
+  max-width: 60rem;
+  width: 100%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.meals ul {
+  list-style: inside;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    /* transform: translateY(3rem); */
+    transform: translateX(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.position{
+  position: relative;
+}
+.MealsError{
+  text-align: center;
+  color: #ff3d00;
+}
+
+.loader {
+  position: absolute;
+display:flexbox;
+  width: 30px;
+  height: 30px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 100%;
+  box-sizing: border-box;
+  animation: rotation 0.5s linear infinite;
+  left: 0;
+  right: 0;
+  margin:auto
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .loader {
+  position: absolute;
+  font-size: 48px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  box-sizing: border-box;
+  text-shadow: 0 0 2px #FFF, 0 0 1px #FFF, 0 0 1px #FFF;
+  letter-spacing: 2px;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.loader::after {
+  content: 'Loading';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  color: #8a2b06;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: animloader 0.3s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    width: 0%;
+  }
+  100% {
     width: 100%;
-    margin: 2rem auto;
-    animation: meals-appear 1s ease-out forwards;
   }
-  
-  .meals ul {
-    list-style:inside;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    border-radius: 10px;
-
-  }
-  
-  @keyframes meals-appear {
-    from {
-      opacity: 0;
-      /* transform: translateY(3rem); */
-      transform: translateX(1rem);
-
-    }
-  
-    to {
-      opacity:1;
-      transform: translateY(0);
-    }
-  }
+} */
